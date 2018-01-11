@@ -11,10 +11,27 @@ import  mstore from './store.js';
 import { Provider } from 'mobx-react';
 
 
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+
+
  ReactDOM.render(
-     
-          <Index />,
+
+ 	 (
+
+     <Router >
+        <Route path="/demo/index" component={Index}/>
+     </Router>
+
+    ),
+          
+          
       
       document.getElementById('body')
  	)
+
+
 

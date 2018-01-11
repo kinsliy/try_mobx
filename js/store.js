@@ -13,8 +13,9 @@ const { observable, action, autorun } = require('mobx');
 
 var mstore =observable({
 	 count:[
-       {name:'kinsliy'}
+       {name:'kinsliy',a:'0'}
 	 ],
+	 num:0,
 	 add(){
 	 	 this.count[0].name='hello'
 	 }

@@ -4,13 +4,16 @@ import React from 'react';
 import {observer} from "mobx-react";
 
 
+import {
+  withRouter,
+} from 'react-router-dom';
  import  mstore from '../../js/store.js';
 
 const Sum =observer(class Sum extends React.Component{
  
     constructor(props) {
     	super(props);
-    	
+    	console.log(this.props)
     }
 
 
@@ -48,4 +51,4 @@ const Sum =observer(class Sum extends React.Component{
 
 
 
-export default Sum;
+export default withRouter(Sum);

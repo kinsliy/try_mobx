@@ -14,12 +14,11 @@ import  mstore from '../../js/store.js';
 
 
 
-
 class Index extends React.Component{
    
     constructor(props) {
     	super(props);
-    	 console.log(this.props)
+    	 
     }
 
     add(){
@@ -52,8 +51,9 @@ class Index extends React.Component{
     	return(
              <React.Fragment>
              
+            
               <Sum  />
-
+            
               <Add  />
 
               <Cancel />
